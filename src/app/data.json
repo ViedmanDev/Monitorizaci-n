@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nombreObra": "Obra xx1",
+        "contrato": "Número de contrato: 1504853",
+        "valorInicial": "Valor inicial: $350.000.000COP",
+        "tiempoRetraso": "9 meses",
+        "location": {
+            "lat": 3.4498239012324067,
+            "lng": -76.52944552328202
+            }
+    },
+    {
+        "id": 2,
+        "nombreObra": "Obra xx2",
+        "contrato": "Número de contrato: 1532523",
+        "valorInicial": "Valor inicial: $1.150.000.000COP",
+        "tiempoRetraso": "9 meses",
+        "location": {
+            "lat": 3.374898,
+            "lng": -76.533496
+        }
+    }
+]
