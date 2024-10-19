@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useAdvancedMarkerRef, Pin, InfoWindow, AdvancedMarker } from "@vis.gl/react-google-maps"
+import YoutubeVideo  from "../components/Video"
 
-const AdvancedMarkerInfo = ({ position, nombreObra, contrato, valorInicial, tiempoRetraso }) => {
+const AdvancedMarkerInfo = ({ position, nombreObra, contrato, valorInicial, tiempoRetraso, videoUrl }) => {
         const [markerRef, marker] = useAdvancedMarkerRef();
         const [openWindow, setOpenWindow] = useState(false)
         console.log(position)
@@ -15,10 +16,11 @@ const AdvancedMarkerInfo = ({ position, nombreObra, contrato, valorInicial, tiem
         {openWindow  &&
         <InfoWindow anchor={marker} onCloseClick={() => setOpenWindow(false)}>
             <div>
-                <h1>{nombreObra}</h1>
-                <p>{contrato}</p>
-                <p>{valorInicial}</p>
-                <p>{tiempoRetraso}</p>
+            <YoutubeVideo videoId={videoUrl}/>
+            <h1>{nombreObra}</h1>
+            <p>{contrato}</p>
+            <p>{valorInicial}</p>
+            <p>{tiempoRetraso}</p>
             </div>
         </InfoWindow>}
         </AdvancedMarker>

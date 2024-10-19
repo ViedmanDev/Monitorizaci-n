@@ -20,6 +20,7 @@ const mapId = "b9a46f605cb1e045"
                     <AdvancedMarkerInfo
                     key={loc.id}
                     position={loc.location}
+                    video={loc.videoUrl}
                     nombreObra={loc.nombreObra}
                     contrato={loc.contrato}
                     valorInicial={loc.valorInicial}

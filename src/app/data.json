@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "videoUrl": "SnwVOZhd98R2TMvD",
         "nombreObra": "Obra xx1",
         "contrato": "Número de contrato: 1504853",
         "valorInicial": "Valor inicial: $350.000.000COP",
@@ -12,6 +13,7 @@
     },
     {
         "id": 2,
+        "videoUrl": "SnwVOZhd98R2TMvD",
         "nombreObra": "Obra xx2",
         "contrato": "Número de contrato: 1532523",
         "valorInicial": "Valor inicial: $1.150.000.000COP",
