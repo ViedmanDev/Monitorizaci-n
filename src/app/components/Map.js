@@ -4,8 +4,8 @@ import AdvancedMarkerInfo from './AdvancedMarkerInfo';
 import data from '../data.json';
 
 const GoogleMap = () => {
-    const [activeMarkerId, setActiveMarkerId] = useState(null); // Estado para el marcador activo
-    const mapId = "b9a46f605cb1e045";
+    const [activeMarkerId, setActiveMarkerId] = useState(null);
+    const mapId = process.env.NEXT_PUBLIC_MAP_ID;
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}>
@@ -26,9 +26,9 @@ const GoogleMap = () => {
                         contrato={loc.contrato}
                         valorInicial={loc.valorInicial}
                         tiempoRetraso={loc.tiempoRetraso}
-                        markerId={loc.id} // Pasamos el ID del marcador
+                        markerId={loc.id}
                         activeMarkerId={activeMarkerId}
-                        setActiveMarkerId={setActiveMarkerId} // Pasamos la función para actualizar el marcador activo
+                        setActiveMarkerId={setActiveMarkerId}
                     />
                 ))}
             </Map>
