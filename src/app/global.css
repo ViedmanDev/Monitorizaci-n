@@ -3,6 +3,16 @@ html, body {
     margin: 0;
 }
 
+iframe {
+    pointer-events: none; /* Deshabilita toda la interacción del iframe */
+}
+
+@media (min-width: 768px) {
+    iframe {
+        pointer-events: auto; /* Reactiva la interacción para pantallas grandes */
+    }
+}
+
 .video-container {
     position: relative;
     width: 100%;

@@ -14,11 +14,12 @@ const GoogleMap = () => {
                 style={{ width: '100vw', height: '100vh' }}
                 defaultZoom={11}
                 defaultCenter={{ lat: 3.4508239012324067, lng: -76.52944552328202 }}
-                disableDefaultUI={true}
-                zoomControl={true}
                 options={{
                     gestureHandling: "cooperative", // Permite mover el mapa con un dedo, el zoom solo con botones
                     zoomControl: true, // Activa los botones de zoom
+                    fullscreenControl: false, // Desactiva el botón de pantalla completa si no es necesario
+                    streetViewControl: false, // Desactiva el control de Street View si no es necesario
+                    mapTypeControl: false // Desactiva el cambio de tipo de mapa si no es necesario
                 }}
             >
                 {data.map((loc) => (
