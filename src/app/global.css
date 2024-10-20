@@ -6,7 +6,7 @@ html, body {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Puedes ajustar esto para controlar el tamaño máximo del video */
+    max-width: 400px; /* controlar el tamaño máximo del video */
     padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
     height: 0;
     overflow: hidden;
