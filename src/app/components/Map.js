@@ -16,6 +16,10 @@ const GoogleMap = () => {
                 defaultCenter={{ lat: 3.4508239012324067, lng: -76.52944552328202 }}
                 disableDefaultUI={true}
                 zoomControl={true}
+                options={{
+                    gestureHandling: "cooperative", // Permite mover el mapa con un dedo, el zoom solo con botones
+                    zoomControl: true, // Activa los botones de zoom
+                }}
             >
                 {data.map((loc) => (
                     <AdvancedMarkerInfo
