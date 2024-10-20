@@ -2,3 +2,38 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+
+@media (min-width: 768px) {
+    iframe {
+        pointer-events: auto; /* Reactiva la interacción para pantallas grandes */
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* controlar el tamaño máximo del video */
+    padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto; /* Centra el video */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 480px) {
+    .video-container {
+      padding-bottom: 75%; /* Ajuste opcional para pantallas móviles si es necesario */
+    }
+  }
+  
